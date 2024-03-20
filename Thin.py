@@ -1,14 +1,16 @@
-def Hub():
-    class player():
-        def __init__(self):
-            self.health = 100
-            self.attack = 3
-            self.defense = 1
-            self.attackboost = 0
-            self.defenseboost = 0
-            self.regen = 1
-            self.gold = 0
+class player():
+    def __init__(self):
+        self.health = 100
+        self.attack = 3
+        self.defense = 1
+        self.attackboost = 0
+        self.defenseboost = 0
+        self.regen = 1
+        self.gold = 0
 
+p = player()
+
+def Hub():
     def Shop(): # For buying equipment with gold
         pass
     def Blacksmith(): # For upgrading equipment with gold
