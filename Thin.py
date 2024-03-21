@@ -1,3 +1,5 @@
+import Fors
+
 class player():
     def __init__(self):
         self.health = 100
@@ -16,7 +18,8 @@ def Hub():
     def Blacksmith(): # For upgrading equipment with gold
         pass
     def TravelCart(): # Going to fight enemies
-        pass
+        print("You can go to Fors")
+        Fors.ForesMain(p)
     Go = input("Where in town go? \n Shop(1) \n Blacksmith(2) \n Travel Cart(3)")
     if Go == "1":
         Shop()
