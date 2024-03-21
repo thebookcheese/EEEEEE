@@ -8,6 +8,7 @@ class player():
         self.attackboost = 0
         self.defenseboost = 0
         self.regen = 1
+        self.dodge = 4
         self.gold = 0
 
 p = player()
