@@ -21,6 +21,7 @@ def Hub():
     def TravelCart(): # Going to fight enemies
         print("You can go to Fors")
         Fors.ForesMain(p)
+        print("No you nack")
     Go = input("Where in town go? \n Shop(1) \n Blacksmith(2) \n Travel Cart(3)")
     if Go == "1":
         Shop()
@@ -31,3 +32,5 @@ def Hub():
     else:
         print("You exit because you bad")
         exit()
+
+Hub()

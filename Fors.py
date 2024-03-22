@@ -1,9 +1,9 @@
 import random
-import Thin
 
 def ForesMain(p):
     print("You in Fors")
     SlimeFight(p)
+
 
 def SlimeFight(p):
     SHP = random.randint(20,25)
@@ -32,5 +32,6 @@ def SlimeFight(p):
         else:
             print("You died")
     else:
-        Thin.Hub()
+        print("Do you want to go back?")
+        print("Yes")
 
