@@ -22,11 +22,13 @@ def SlimeFight(p):
                     print("Player dodged")
                 else:
                     p.health = p.health - SDamage
+                    print("You took ",SDamage," damage")
                 pdamage = p.attack - SDef
                 if Dodge < (SDodge + 1):
                     print("Slime dodged")
                 else:
                     SHP = SHP - pdamage
+                    print("You did ",pdamage," damage")
             else:
                 print("NO")
         else:
