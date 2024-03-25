@@ -1,5 +1,8 @@
 import random
 
+def Drop1(p):
+    pass
+
 def ForesMain(p):
     print("You in Fors")
     SlimeFight(p)
