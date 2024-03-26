@@ -37,12 +37,12 @@ def SlimeFight(p):
         if p.health > 0:
             Do = input("What do you want to do? \n Attack (1) \n Exit (2)")
             if Do == "1":
-                SDamage = SAtt - (p.health)
+                SDamage = SAtt - (p.defense + p.defenseboost)
                 Dodge = random.randint(1,100)
                 if Dodge < (p.dodge + 1):
                     print("Player dodged")
                 else:
-                    p.health = p.health - (SDamage - (p.defense+p.defenseboost))
+                    p.health = p.health - SDamage
                     print("You took ",SDamage," damage")
                     print("You are now on ",p.health," health")
                 pdamage = (p.attack + p.attackboost) - SDef
