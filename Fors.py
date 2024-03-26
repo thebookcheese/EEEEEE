@@ -35,21 +35,25 @@ def SlimeFight(p):
     print("You encounter a slime with ",SHP," health")
     while SHP > 0:
         if p.health > 0:
-            Do = input("What do you want to do? \n Attack (1)")
+            Do = input("What do you want to do? \n Attack (1) \n Exit (2)")
             if Do == "1":
-                SDamage = SAtt - (p.health + p.defenseboost)
+                SDamage = SAtt - (p.health)
                 Dodge = random.randint(1,100)
                 if Dodge < (p.dodge + 1):
                     print("Player dodged")
                 else:
-                    p.health = p.health - SDamage
+                    p.health = p.health - (SDamage - (p.defense+p.defenseboost))
                     print("You took ",SDamage," damage")
+                    print("You are now on ",p.health," health")
                 pdamage = (p.attack + p.attackboost) - SDef
                 if Dodge < (SDodge + 1):
                     print("Slime dodged")
                 else:
                     SHP = SHP - pdamage
                     print("You did ",pdamage," damage")
+                    print("The slime is on ",SHP," health")
+            elif Do == "2":
+                exit()
             else:
                 print("NO")
         else:
