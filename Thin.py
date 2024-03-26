@@ -17,7 +17,7 @@ def Hub():
     def Shop(): # For buying equipment with gold
         pass
     def Blacksmith(): # For upgrading equipment with gold
-        pass
+        WhatUpgrade = input("What do you want to upgrade? \n Sword (1) \n Shield (2) ")
     def TravelCart(): # Going to fight enemies
         print("You can go to Fors")
         Fors.ForesMain(p)

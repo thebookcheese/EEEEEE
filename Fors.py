@@ -64,7 +64,9 @@ def SlimeFight(p):
             Drop1(p,1,3)
         else:
             Drop2(p,1,3)
-        
+        GoldGain = random.randint(3,10)
+        p.gold = p.gold + GoldGain
+        print("Yoou gained ",GoldGain," gold from the slime. You now have ",p.gold," gold")
         
         print("Do you want to go back?")
         print("Yes")
