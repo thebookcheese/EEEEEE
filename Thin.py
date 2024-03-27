@@ -18,6 +18,9 @@ def Hub():
         pass
     def Blacksmith(): # For upgrading equipment with gold
         WhatUpgrade = input("What do you want to upgrade? \n Sword (1) \n Shield (2) ")
+        if WhatUpgrade == "1":
+            HowMuch = int(input("How much do you want to put into the sword"))
+
     def TravelCart(): # Going to fight enemies
         print("You can go to Fors")
         Fors.ForesMain(p)
